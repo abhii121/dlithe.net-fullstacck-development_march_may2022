@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <style>
+        .h1
+        {
+            position: relative;
+            left: 150px;
+            color: rgb(134, 93, 32);
+            
+        }
+        .left
+        {
+            float: left;
+        }
+        .p1 
+        {
+            white-space: nowrap;
+            width:400px;
+            border:1px double rgb(104, 64, 19);
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .p2
+        {
+           white-space: nowrap;
+           width: 400px;
+           border: 1px double;
+           overflow: hidden;
+        }
+        .p2:hover
+        {
+            overflow: visible;
+            width: 400px;
+            border: 2px double red;
+        }
+        .p3
+        {
+            top: 10px;
+            position: static;
+        }
+        a:link
+        {
+            color: rgb(73, 28, 28);
+        }
+        a:visited
+        {
+            color: rgb(143, 32, 32);
+            text-decoration: none;
+        }
+        a:active
+        {
+            color: blueviolet;
+        }
+       
+        a:hover
+        {
+            color:rgb(43, 189, 177);
+            background-color: antiquewhite;
+        }
+        .pagination a
+        {
+            color: rgb(160, 95, 21);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1">COFFEE TIME</h1>
+    <img src="assests/costacoffee_reuters.jpg.crdownload" height="60px" width="60px" alt="abc" class="left">
+    <P>
+        Coffee is a brewed drink prepared from roasted coffee beans
+    </P><br>
+    <p class="p1">The seeds of berries from certain flowering plants in the Coffea genus</p>
+    <p class="p2">From the coffee fruit, the seeds are separated to produce a stable, raw product: unroasted green coffee.
+    </p>
+    <p class="p3">COFFEE CULTURE</p>
+    To know more click <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank">here</a>
+    
+    <div class="pagination">
+        <a href="assests/coffee1.jpg">&laquo;</a>
+        <a href="assests/coffee2.jfif">type1</a>
+        <a href="assests/coffee3.jfif">type2</a>
+        <a href="assests/coffee4.jfif">type3</a>
+        <a href="assests/costacoffee_reuters.jpg.crdownload">&laquo;</a>
+    </div>
+</body>
+</html>
