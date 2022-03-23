@@ -8,12 +8,59 @@
     <style>
         body
          {
-         background-color: rgb(104, 136, 132);
+            background: #FFEEEE;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        
+        }
+        .head
+        {
+            text-align: center;
+            text-shadow: 4px 3px 2px rgb(167, 167, 167);
+            color: rgb(43, 19, 19);
+            
+        }
+        p.p1
+        {
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgb(61, 61, 61);
+            border-radius: 50px;
+            outline-style: outset;
+            outline-color: rgb(209, 197, 156);
+            outline-width: 2px;
+            outline-offset: 3px;
+            text-align: center;
+            padding: 5px;
+        }
+        p.p2
+        {
+            border-style: double;
+            border-width: 2px;
+            border-color: rgb(20, 20, 20);
+            text-align: center;
+            padding: 5px;
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">FILL THE FORM</h1>
+    <section>
+        <h1 class="head">WELCOME </h1>
+        <P class="p1">Admission forms are processed within 48hr. You will receive an email comformation when we process your application</P>
+    </section>
+    <article>
+        <h2 class="head">
+            ABOUT INSTITUE
+        </h2>
+        <p class="p2">
+            The Institute is concerned with education at all levels and in all its aspects. It aims at bringing about improvement of education through various kinds of educational technologies. It has to deal with pre- primary, primary. Secondary and University Education, Open University Education, Containing Education, Adult Education and so on.
+
+        </p>
+    </article>
+
+    <h3 style="text-align: center;">FILL THE FORM</h3>
     <form action="" method="post">
         <fieldset>
             <legend>Details</legend>
@@ -27,6 +74,8 @@
             <input type="email" name="email" required><br><br>
             <label>Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="password" name="password" required><br><br>
+            <label>QUALIFICATION</label>&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+            <textarea></textarea><br><br>
             <label>GENDER</label><br>
             <input type="radio" id="gender" name="gender" value="Female">Female<br>
             <input type="radio" id="gender" name="gender" value="Male">Male<br><br>
@@ -38,14 +87,10 @@
                 <option>CANADA</option>
             </select>
             <input type="submit" value="Register"> 
-        
-            
-
-
-
-
         </fieldset>
     </form>
-    
+    <BR>
+        Search other Institute <br>
+    <a href="https://www.google.com/" target="_blank">SEARCH</a>
 </body>
 </html>
