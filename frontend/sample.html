@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMPLE</title>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <p id="empname"></p>
+    <p id="emp2"></p>
+    <p id="emp"></p>
+ <script>
+     
+     const empdetails={
+         empname:"abhi",
+         empid:01,
+         empdesignation:"traine",
+         company:"dlithe"
+     };
+     const empdetails2={
+         empname1:"jithu",
+         empid1:02,
+         empdesignation1:"traine",
+         companyname:"infosys"
+     };
+     document.getElementById("empname").innerHTML=empdetails.empname + " is a " + empdetails.empdesignation + " in " + empdetails.company;
+     document.getElementById("emp2").innerHTML=empdetails2.empid1 + " id is " + empdetails2.empname1 + " works at " + empdetails2.companyname;
+     var name ="alenso";
+     document.getElementById("emp").innerHTML=name + " works in kerala";
+
+ </script>    
+</body>
+</html>
