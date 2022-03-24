@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+    <style>
+        body
+        {
+            background-color: background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+        }
+        img
+        {
+          transition: width 2s,height 2s,transform 2s;
+          
+        }
+        img:hover
+        {
+            width:200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+        .absolute
+        {
+            height: 100px;
+            width: 200px;
+            border-style: double;
+            position: absolute;
+            left: 150px;
+            top: 10px;
+            transition: width 3s ease;
+
+        }
+        .absolute:hover
+        {
+            width: 400px;
+        }
+        .relative
+        {
+            position: relative;
+            top: 20px;
+            border-style: double;
+            width: 400px;
+            height: 100px;
+            border-color: rgb(255, 255, 255);
+
+        }
+       
+    </style>
+<body>
+    <img src="assests/smiley1.jpg" height="100px" width="100px">
+    <br><br>
+    <div class="absolute">If you have good thoughts they will shine out of your face like sunbeams and you will always look lovely.</div>
+     <div class="relative">
+         <p class="absolte">Think of all the beauty still left around you and be happy</p>
+     </div>
+     <br>
+     <br>
+     <br>
+    
+     
+</body>
+</html>
