@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS</title>
+</head>
+<body>
+    <script>
+        var a1=["Monday","Tuesday","Wednesday","Thursday","Friday"];
+        var a2=[1,2,3,4,5];
+        var char=["Abhi","Jithu","Alenso","Cyril","Jack"];
+        var numbers=[8,6,4,7,2];
+        
+        document.write("Array1- " + a1 +"<br>"+"<br>");
+        document.write("Array2- " + a2+"<br>"+"<br>");
+        document.write("Array3- "+char+"<br>"+"<br>");
+        document.write("Array4 - "+numbers);
+        document.write("<hr>");
+
+        var concatenate=a1+a2;
+        document.write("Concatenated both arrays - " + concatenate +"<br>"+"<br>");
+        document.write("Pushed element to array1 - ");
+        a1.unshift("Sunday");
+        document.write(a1+"<br>"+"<br>");
+        document.write("Array 2 Poped out-  ");
+        var pop=a2.pop();
+        document.write(pop+"<br>"+"<br>");
+        document.write("<hr>");
+
+        document.write("To display values of each index in the array1 - "+"<br>");
+        var index=a1.entries();
+        for (var item of index)
+        {
+            document.write(item+"<br>"+"<br>");
+        }
+
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("Splicing Array2 - ");
+        a2.splice(6,0,7);
+        document.write(a2+"<br>"+"<br>"+"<br>");
+        document.write("To filter array3 - ");
+        var filter=char.filter(char=>char.length==4);
+        document.write(filter+"<br>"+"<br>");
+        document.write("Sorted Array4 - ");
+        document.write(numbers.sort())
+        
+    </script>
+    
+</body>
+</html>
