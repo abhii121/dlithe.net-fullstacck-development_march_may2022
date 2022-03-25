@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String concept</title>
+</head>
+<style>
+    body
+    {
+        background-color: bisque;
+    }
+</style>
+<body>
+    <p id="1"></p>
+    <p id="2"></p>
+    <script>
+        var str1="Hi";
+        var str2=" Welcome  Abhi";
+        var names="HTML CSS JAVASCRIPT";
+
+
+        document.getElementById("1").innerHTML=str1+str2;
+        document.write("<br>");
+        document.write("Name =");
+        var result=str2.slice(8,14);
+        document.write(result +"<br>"+"<br>");
+        document.write("To remove the white space ="+"<br>");
+        var str3=str2.trim();
+        document.write(str3 + "<br>");
+        document.write("Spliting names = ");
+        document.write(names.split(" "))
+        document.write("<br>");
+        document.write(str1.toUpperCase() + "<br>");
+        document.write(str2.indexOf("A"));
+        document.write("<br>");
+        for(var i=0;i<5;i++)
+          document.write(names[i]);
+        
+        </script>
+</body>
+</html>
