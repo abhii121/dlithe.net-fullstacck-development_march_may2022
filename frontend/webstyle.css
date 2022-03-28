@@ -1,11 +1,11 @@
 
 h1
 {
-    color: rgb(59, 59, 59);
-    align-content: center;
-    text-align: center;
+    color: rgb(59, 59, 59);/*heading color*/
+    align-content: center;/*aligned to center*/
+    text-align: center;/*text align*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 2px 3px 8px rgb(122, 119, 119);
+    text-shadow: 2px 3px 8px rgb(122, 119, 119);/*text shadow to home page*/
 
 
 }
@@ -20,8 +20,8 @@ header
 {
     background-image: url("assests/car.jpg");
     height: 100vh;
-    background-size: cover;
-    background-position: center;
+    background-size: cover;/*image will cover the webpage with image size*/
+    background-position: center;/*image is aligned to center*/
 }
 #f1
 {
@@ -31,24 +31,24 @@ header
 
 ul
 {
-    float: right;
-    list-style-type: none;
+    float: right;/*keep to right*/
+    list-style-type: none;/*style none*/
 }
 ul li
 {
-    display: inline-block;
+    display: inline-block;/*to display vertically*/
 
 }
 ul li a
 {
-    text-decoration: none;
+    text-decoration: none;/*to remove underline*/
     color: black;
-    padding: 5px 20px;
-    border: 1px solid;
-    transition: 0.6s ease;
+    padding: 5px 20px;/*adjusting the spacing*/
+    border: 1px solid;/*borders*/
+    transition: 0.6s ease;/*transitions*/
 }
 ul li a:hover
 {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);/*red color hover effect is applied*/
     color: rgb(0, 0, 0);
 }
