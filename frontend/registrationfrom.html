@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <style>
+        body
+        {
+            background: #D3CCE3;  
+            background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  
+            background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+            
+        }
+        h2
+        {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        legend
+        {
+            color: rgb(85, 69, 0);
+        }
+        fieldset
+        {
+            color: rgb(83, 65, 30);
+        }
+    </style>
+</head>
+
+<body>
+    <H2 style="text-align: center;">REGISTRATION FORM</H2>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Apply</legend>
+            <label>Name :</label>
+            <input type="text" name="name" required><br><br>
+            <label>Contact info : </label>
+            <input type="number" name="number" required><br><br>
+            <label>From Where</label>
+            <input type="text" name="where" required><br><br>
+            <label>To Where</label>
+            <input type="text" name="to" required><br><br>
+            <label>Vehicle type</label>
+            <select name="vehicle">
+                <optgroup label="Hyundai">
+                    <option>Hyundai Creta</option>
+                    <option>Hyundai Grand i10 </option>
+                    <option>Honda city</option>
+                </optgroup>
+                <optgroup label="Maruti">
+                    <option>Brezza</option>
+                    <option>Maruti Swift </option>
+                    <option>Maruti Dzire</option>
+                </optgroup>
+                <optgroup label="Kia">
+                    <option>Kia Seltos</option>
+                    <option>Kia Sonet </option>
+                    <option>kia Carnes</option>
+                </optgroup>
+                
+            </select><br><br>
+            <input type="submit" value="register">
+
+        </fieldset>
+
+    </form>
+
+    
+</body>
+</html>
