@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control statements</title>
+</head>
+<body>
+    <script>
+        var n1=10;
+        var n2=50;
+        var n3=100;
+        document.write("To display greater number -- ");
+        if(n1>n2&&n1>n3)
+        {
+          document.write("n1 is the greatest");
+        }
+        else if(n2>n3)
+        {
+          document.write("n2 is greatest ");
+        }
+        else
+         {
+            document.write("n3 is greatest"+"<br>"+"<br>")
+         }
+        document.write("To display smallest number using nested if statement --");
+        if(n1<n2)
+        {
+            if(n1<n3)
+            {
+                document.write("n1 is smallest");
+            }
+        }
+        else if(n2<n3)
+        {
+            document.write("n2 is smallest");
+        
+        }
+        else
+        {
+            document.write("n3 is smallest");
+        }
+       document.write("<hr>");
+       document.write("<br>");
+        document.write("to display day of the week using switch statemnet--");
+        var day="friday";
+        switch(day)
+        {
+          case "Sunday":document.write("Sunday");
+          break;
+          case "monday":document.write("monday");
+          break;
+          case "thuesday":document.write("thuesday");
+          break;
+          case "wednesday":document.write("wednesday");
+          break;
+          case "thursday":document.write("thursday");
+          break;
+          case "friday":document.write("friday");
+          break;
+          case "Saturday":document.write("saturday");
+          break;
+          default:document.write("Invalid day");
+          break;
+        }
+        document.write("<hr>");
+        document.write("Looping statement --"+"<br>");
+        var a=5;
+        for(var i=0;i<5;i++)
+        {
+            a+=i;
+            document.write(a +"<br>");
+        }
+        document.write("Do while statemnet-- "+"<br>");
+        var a2=20;
+        do
+        {
+            document.write("value is :"+a2+"<br>");
+            a2++;
+        }while(a2<10);
+        
+        
+    </script>
+    <button type="button" ondblclick="sum(3,6,9)">SUM</button>
+<script>
+  function sum(num1,num2,num3)
+  {
+   document.write(num1+num2+num3);
+  }
+</script>
+</body>
+</html>
