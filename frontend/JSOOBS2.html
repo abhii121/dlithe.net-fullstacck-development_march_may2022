@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOBS Concept</title>
+</head>
+<body>
+    <script>
+        var myOoj =  
+        {
+          name: "Nikki",
+          city: "Bangalore",
+          loves: "so many"
+        }
+        function myFun() {};
+        myFun.prototype.name = "Nikki";
+        myFun.prototype.city = "Bangalore";
+        var myFun1 = new myFun();
+        console.log(myFun1.name); 
+
+        function myFun (name, city, loves)
+        {
+          this.name = name;
+          this.city = city;
+        this.loves= loves;
+        }
+    var myFun1 = new myFun ("Nikki", "Bangalore", "so much things");
+    console.log(myFun1.name); 
+    </script>
+</body>
+</html>
