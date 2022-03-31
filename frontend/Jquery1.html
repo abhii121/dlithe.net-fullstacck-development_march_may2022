@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        $("#b1").click(function(){
+            $("#div1").animate({
+              left:'250px',opacity:'0.7',height:'100px',width:'100px'
+            })
+        })
+    })
+</script>
+<script>
+    $(document).ready(function()
+    {
+        $("#b2").click(function(){
+            $("#div2").animate({
+              height:'toggle'
+            })
+        })
+    })
+</script>
+<script>
+    $(document).ready(function(){
+  $("p").click(function(){
+    var img = $("img");
+    img.animate({height: '150px', opacity: '0.4'}, "slow");
+    img.animate({width: '150px', opacity: '0.8'}, "slow");
+    img.animate({height: '200px', opacity: '0.4'}, "slow");
+    img.animate({width: '200px', opacity: '0.8'}, "slow");
+    img.fadeOut(7000);
+  });
+});
+
+</script>
+
+<body>
+    <div id="div1" style="height: 50px;width: 50px; position: relative;background: red;margin-top: 50px;"></div>
+    <button id="b1">animation 1 </button><br><br>
+    <div id="div2" style="height: 50px;width: 50px; position: relative;background: rgb(54, 54, 54);margin-top: 50px;"></div><br>
+    <button id="b2">animation 2 </button><br><br>
+    <p style="color: red;font-size: large;">Start</p>
+    <img src="assests/img12.jpg" style="height: 100px;width: 100px;border-radius: 10px;">
+</body>
+</html>

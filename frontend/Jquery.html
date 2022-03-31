@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function()
+        {
+           $("#c").click(function()
+           {
+               $(".car").toggle();
+           });
+        });
+        $(document).ready(function()
+        {
+           $("#b").click(function()
+           {
+               $(".bike").toggle();
+           });
+        });
+        $(document).ready(function()
+        {
+            $("#f").click(function(){
+                $(".car").fadeOut("5000");
+            })
+        })
+
+
+    </script>
+
+    <div>
+        <img class="car" src="assests/car2.jpg" style="width: 300px;height: 150px;">
+        <img class="car" src="assests/car3.jfif" style="width: 250px;height: 150px;">
+        <img class="car" src="assests/supra.jfif" style="width: 260px;height: 150px;">
+        <img class="bike" src="assests/bike1.jpg" style="width: 190px;height: 150px;">
+        <img class="bike" src="assests/bike2.jpg" style="width: 200px;height: 150px;">
+    </div><br><hr>
+    <button id="c">Hide and Show Cars</button>
+    <button id="b">Hide and Show Bikes</button>
+    <button id="f">fadeout cars</button><br><br><br>
+    <script>
+        $(document).ready(function()
+        {
+            $("#div1").click(function()
+            {
+                $("#img1").slideDown("slow");
+            })
+        })
+    </script>
+    <script>
+         $(document).ready(function()
+        {
+            $("#div2").click(function()
+            {
+                $("#img2").slideUp("slow");
+            })
+        })
+    </script>
+    <style>
+        #img1,#div1
+        {
+          padding: 5px;
+          text-align: center;
+          background-color: wheat;
+          border: solid 1px rgb(255, 231, 137);
+          width: 500px;
+        }
+        #img1
+        {
+            width:500px;
+            display: none;
+        }
+        #img2,#div2
+        {
+            padding: 5px;
+            text-align: center;
+            background-color: wheat;
+            border: solid 1px rgb(255, 231, 137);
+            width:500px;
+        }
+        #img2
+        {
+            width:500px;
+        }
+    </style>
+
+    <div id="div1">Slide down</div>
+    <img id="img1" src="assests/smiley2.jpg">
+    <div id="div2">Slide up</div>
+    <img id="img2" src="assests/smiley2.jpg">
+    
+</body>
+</html>
