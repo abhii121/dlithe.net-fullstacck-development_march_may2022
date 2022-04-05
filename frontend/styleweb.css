@@ -1,7 +1,7 @@
 header{
-    background-image:url("assests/wp2848580-hd-technology-wallpapers-1080p.jpg") ;
+    background-image:url("assests/wp2848580-hd-technology-wallpapers-1080p.jpg")  ;
     opacity: 0.9;
-
+    
     background-size: cover;
     background-position: center ;
     height: 100vh;
@@ -15,6 +15,7 @@ header{
 }
 .navbar-brand{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
 }
 .nav-link{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -33,7 +34,8 @@ header{
     padding: 10px 50px;
     display: inline-block;
     margin-top: 15px;
-    color: aliceblue;
+    color: rgb(12, 12, 12);
+    background-color: rgb(255, 255, 255);
 }
 .text-area{
     font-size: 70px;
@@ -41,4 +43,15 @@ header{
     text-transform: uppercase;
     font-weight: bold;
     color: aliceblue;
+}
+.card 
+{
+    transition: transform .7s;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgb(158, 162, 184);
+}
+
+.card:hover 
+{
+    transform: scale(1.1);
 }
