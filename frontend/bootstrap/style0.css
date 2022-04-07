@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+
+
+header
+{ 
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assest/pexels-steve-johnson-1843717.jpg") ;
+    background-size: cover;
+    background-position: bottom;
+}
+.col-md-4 img{
+    position: absolute;
+    background-size: cover;
+    height: 80vh;
+    border: 1px solid rgb(70, 70, 70) transparent;
+    border-radius: 20px;
+    
+}
+.col-md-4
+{
+    position: relative;
+}
+
+
+form .btn{
+    background-color: aliceblue;
+    color: black;
+}
+
+.col-md-4{
+    top: 50px;
+}
+.col-md-8{
+    text-align: center;
+    top: 200px;
+    
+}
+.col-md-8 h3{
+    font-size: 70px;
+    font-family: Poppins;
+    flex-basis: 40%;
+    
+}
+.col-md-8 h1{
+    font-size: 90px;
+    font-weight: 100;
+    font-family: Poppins;
+    color: black;
+}
+.col-md-8 p{
+    font-size: 20px;
+}
+.banner-btn a{
+    border: 1px solid white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 50px;
+    display: inline-block;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(68, 67, 67);
+}
+.col-md-8::after{
+    content: '';
+    width: 8px;
+    height: 57%;
+    border-radius: 40%;
+    background-color: rgb(114, 128, 112);
+    position: absolute;
+    left: -40px;
+    top: 7px;
+}
+
+
